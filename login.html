@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Signup - Your Company Name</title>
+  <link rel="stylesheet" href="assets/css/foodhub.css"> 
+  <link rel="stylesheet" href="assets/css/media_query.css">
+  <link rel="stylesheet" href="assets/css/style.css"><!-- Link to your existing CSS file -->
+  <!-- Additional styles if needed -->
+  <style>
+    /* Add any additional styles specific to this page if needed */
+  </style>
+</head>
+<body>
+
+  <header>
+
+    <nav class="navbar">
+
+      <div class="navbar-wrapper">
+
+        <a href="#">
+          <img src="./assets/images/logo.svg" alt="logo" width="130">
+        </a>
+
+        <ul class="navbar-nav">
+
+          <li>
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+
+        </ul>
+
+        <div class="navbar-btn-group">
+
+
+
+
+        </div>
+
+      </div>
+
+    </nav>
+
+
+
+  </header>
+
+<section class="login-signup" style="margin-top: 100px;">
+  <div class="container">
+    <div class="form-box">
+      <div class="form-toggle">
+        <button id="login-toggle" class="toggle-btn active">Login</button>
+        <button id="signup-toggle" class="toggle-btn">Sign Up</button>
+      </div>
+
+      <form id="login-form" class="auth-form active">
+        <h2 class="form-title">Login</h2>
+        <div class="form-group">
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" name="login-email" required>
+          <div class="error-message" id="login-email-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" name="login-password" required>
+          <div class="error-message" id="login-password-error"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+
+      <form id="signup-form" class="auth-form">
+        <h2 class="form-title">Sign Up</h2>
+        <div class="form-group">
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" name="signup-email" required>
+          <div class="error-message" id="signup-email-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" name="signup-password" required>
+          <div class="error-message" id="signup-password-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="signup-confirm-password">Confirm Password</label>
+          <input type="password" id="signup-confirm-password" name="signup-confirm-password" required>
+          <div class="error-message" id="signup-confirm-password-error"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<script src="assets/js/validation.js"></script> <!-- Link to your JavaScript file -->
+<!-- Additional scripts if needed -->
+</body>
+</html>
